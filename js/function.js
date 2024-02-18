@@ -5,7 +5,10 @@ document.getElementById('A1').addEventListener('click',function(){
         setGreen('A1');
         seatMaxNum = seatMaxNum + 1;
         setSeat('seatMax',seatMaxNum);
-        const a1 = document.getElementById('A1');
+        let totalSeat = document.getElementById('totalMax');
+        let totalMaxNum = parseInt(totalSeat.innerText);
+        totalMaxNum = totalMaxNum - 1;
+        setSeat('totalMax',totalMaxNum);
     }
 });
 
@@ -19,6 +22,14 @@ function setSeat(setId,newSeat){
     a.innerText = newSeat;
 }
 
+document.getElementById('applyCoupunInput').addEventListener('keyup',function(){
+    let a = document.getElementById('applyCoupunInput');
+    let ans = a.value;
+    if(ans === 'NEW15' || ans === 'Couple20'){
+        let b = document.getElementById('applyCoupon');
+        b.setAttribute('enabled',true)
+    }
+})
 
 
 
