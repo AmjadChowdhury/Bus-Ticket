@@ -21,14 +21,22 @@ function setSeat(setId,newSeat){
     let a = document.getElementById(setId);
     a.innerText = newSeat;
 }
-
+// Apply btn disabled to enable
 document.getElementById('applyCoupunInput').addEventListener('keyup',function(){
     let a = document.getElementById('applyCoupunInput');
     let ans = a.value;
+    let b = document.getElementById('applyCoupun');
     if(ans === 'NEW15' || ans === 'Couple20'){
-        let b = document.getElementById('applyCoupon');
-        b.setAttribute('enabled',true)
+        b.removeAttribute('disabled');
     }
+    else{
+        b.setAttribute('disabled',true);
+    }
+})
+
+document.getElementById('applyCoupun').addEventListener('click',function(){
+    const a = document.getElementById('applyDiv');
+    a.style.display = 'none';
 })
 
 
