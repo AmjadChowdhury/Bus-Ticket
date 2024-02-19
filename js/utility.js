@@ -57,6 +57,10 @@ function setbiboronList(Id){
         <p>550</p>
     </div>`
     parent.appendChild(newChild);
+
+    let p = document.getElementById(Id);
+    let pText = p.innerText;
+    document.getElementById('textDaoSeat').innerText = pText;
 }
 
 // total bara check..
