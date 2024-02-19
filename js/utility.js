@@ -75,3 +75,14 @@ function totalBara(){
     let grandTotal = document.getElementById('grandTotal');
     grandTotal.innerText = result;
 }
+
+// Next btn disabled to enabled...
+document.getElementById('phoneNum').addEventListener('keyup',function(){
+    let p = document.getElementById('nextBtn');
+    
+    let seat = document.getElementById('seatMax');
+    let seatNum = seat.innerText;
+    if(seatNum > 0){
+        p.removeAttribute('disabled');
+    }
+})
