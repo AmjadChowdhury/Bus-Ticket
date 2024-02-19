@@ -206,7 +206,7 @@
                 <!-- Price -->
                 <div class="flex justify-between">
                     <p class="text-xl font-bold">Total Price :</p>
-                    <p class="text-xl font-bold" >BDT : <span id="totalBara">1100</span></p>
+                    <p class="text-xl font-bold" >BDT : <span id="totalBara">0</span></p>
                 </div>
                 <!-- Coupon Dscount -->
                 <div class="flex justify-center" id="applyDiv">
@@ -215,10 +215,15 @@
                         <button class="btn bg-green-400" id="applyCoupun" disabled>Apply</button>
                     </div>
                 </div>
+                <!-- Discount price -->
+                <div class="flex justify-between">
+                    <p class="text-xl font-bold">Discount :</p>
+                    <p class="text-xl font-bold" >BDT : <span id="discountPrice">0</span></p>
+                </div>
                  <!--Grand Total Price -->
                  <div class="flex justify-between">
                     <p class="text-xl font-bold">Grand Total :</p>
-                    <p class="text-xl font-bold">BDT : 1100</p>
+                    <p class="text-xl font-bold">BDT : <span id="grandTotal">0</span></p>
                 </div>
                 </div>
                 <!-- Personal info -->
@@ -236,7 +241,7 @@
                         <input type="e-mail" name="" id="" placeholder="Enter Your E-mail" class="w-full mx-2 p-3 bg-gray-100 rounded-full">
                     </div>
                 </div>
-                <button class="btn w-full p-2 bg-green-500 my-2">Next</button>
+                <button class="btn w-full p-2 bg-green-500 my-2" id="nextBtn">Next</button>
              </div>
         </div>
 
@@ -245,6 +250,7 @@
 
     </footer>
 
+    <script src="./js/utility.js"></script>
     <script src="./js/function.js"></script>
 </body>
 </html>
